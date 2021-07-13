@@ -14,7 +14,7 @@ app.use(express.json());
 
 //set route
 app.get("/", (req, res) => {
-    res.json("Welcome to my first api hahahaha");
+    res.json("Welcome to my failed api hahahaha");
 });
 
 app.use('/import', require('./routes/import'));
