@@ -4,23 +4,6 @@ const router = express.Router();
 const pool = require('../db');
 const { v4: uuidv4 } = require('uuid');
 
-const mockData = {
-    "company": "ABC",
-    "dates": "8/7/2564",
-    "list": [
-        {
-            "item_id": "f015744a-ddc6-4901-a9fb-e3c7cea81be0",
-            "price": 10,
-            "amount": 50,
-        },
-        {
-            "item_id": "0a538b7b-42dc-4cad-85f5-e1ef2291acf6",
-            "price": 3,
-            "amount": 10,
-        }
-    ]
-}
-
 // category GET POST
 router.post('/category', async (req, res) => {
     try {
