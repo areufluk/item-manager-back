@@ -13,6 +13,10 @@ app.use(express.json());
 // app.use(express.urlencoded({ extended: false}));
 
 //set route
+app.get("/", (req, res) => {
+    res.json("Welcome to my first api hahahaha");
+});
+
 app.use('/import', require('./routes/import'));
 
 app.listen(PORT, () => console.log(`running server at port ${PORT}`));
